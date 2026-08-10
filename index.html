@@ -44,7 +44,7 @@ td:first-child{font-weight:700;color:var(--accent-light)}
 .ornament-band{height:72px;background:#000 url("img/ornament.png") repeat-x center/auto 100%;margin-bottom:50px}
 .ornament-band.bottom{margin:60px 0 0}
 /* ===== НАСТОЯЩИЙ ФЛАГ РБ ===== */
-.rb-flag{height:190px;border-radius:10px;background:#000 url("img/flag.png") center/cover no-repeat;box-shadow:0 6px 30px rgba(0,0,0,.8),0 0 0 1px #2a2a2a;margin-bottom:45px}
+.rb-flag{display:block;width:min(100%,640px);height:auto;margin:0 auto 45px;border-radius:8px;box-shadow:0 6px 30px rgba(0,0,0,.8),0 0 0 1px #2a2a2a;background:#000}
 /* ===== ПАМЯТКИ ===== */
 .memo-card{background:rgba(12,6,6,.94);border:2px solid var(--ornament-red);border-radius:12px;padding:40px;margin-bottom:35px;position:relative;z-index:1;box-shadow:0 0 0 3px #000,0 0 0 5px rgba(210,39,48,.6),0 10px 40px rgba(0,0,0,.8)}
 .memo-card h3{color:#ff5a5a;font-size:1.5rem;margin-bottom:25px;padding-bottom:15px;border-bottom:2px dashed var(--ornament-red)}
@@ -62,7 +62,7 @@ footer{background:var(--bg-secondary);padding:40px 20px;text-align:center;border
 footer a{color:var(--accent-light);text-decoration:none}
 html{scroll-behavior:smooth}
 #rules{background:var(--bg-primary)}#explanations{background:var(--bg-secondary)}#table{background:var(--bg-secondary)}
-@media(max-width:768px){header h1{font-size:2rem}nav a{padding:8px 14px;font-size:.85rem}.card,.explanation,.memo-card{padding:20px}th,td{padding:10px 8px;font-size:.8rem}.rb-flag{height:110px}.ornament-band{height:44px}}
+@media(max-width:768px){header h1{font-size:2rem}nav a{padding:8px 14px;font-size:.85rem}.card,.explanation,.memo-card{padding:20px}th,td{padding:10px 8px;font-size:.8rem}.ornament-band{height:44px}}
 </style>
 </head>
 <body>
@@ -220,7 +220,7 @@ html{scroll-behavior:smooth}
 <section id="moderators" class="memo-section">
     <div class="ornament-band"></div>
     <div class="container">
-        <div class="rb-flag" title="Флаг Республики Беларусь"></div>
+        <img class="rb-flag" src="img/flag.png" alt="Флаг Республики Беларусь">
         
         <h2 class="section-title"><span class="icon">🛡️</span> Памятки для модерации</h2>
         
